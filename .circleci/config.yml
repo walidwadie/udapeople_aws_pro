@@ -308,12 +308,12 @@ jobs:
 #             fi
   notify_on_success:
     docker:
-      - image: cimg/base:2022.12
+      - image: cimg/base:stable
     steps:
       - slack/notify:
           event: pass
           channel: cicd-pipeline
-          template: success_tagged_deployment_1
+          template: success_tagged_deploy_1
             
 
 workflows:
