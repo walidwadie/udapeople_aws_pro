@@ -177,6 +177,7 @@ jobs:
              npm audit --audit-level=critical
       - notify_on_failure
 
+
   deploy-infrastructure:
     docker:
       - image: cimg/base:stable
